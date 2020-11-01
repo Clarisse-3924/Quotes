@@ -6,8 +6,8 @@ import {Quote} from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes=[new Quote("New Times","Clarisse Uwizeyimana","God is Good"),
-new Quote("Igihe","Gihozo","All The time")]
+  quotes=[new Quote("New Times","Clarisse Uwizeyimana","God is Good",new Date(2020,11,1)),
+new Quote("Igihe","Gihozo","All The time",new Date(2020,11,1))]
   preNum:number
   lastNum:number
   counter:number

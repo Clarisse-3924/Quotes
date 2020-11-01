@@ -7,6 +7,7 @@ import { FormComponent } from './form/form.component';
 import { DetailsComponent } from './details/details.component';
 import { QuoteComponent } from './quote/quote.component';
 import { HighlightDirective } from './highlight.directive';
+import { DayspassedPipe } from './dayspassed.pipe';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HighlightDirective } from './highlight.directive';
     FormComponent,
     DetailsComponent,
     QuoteComponent,
-    HighlightDirective
+    HighlightDirective,
+    DayspassedPipe
   ],
   imports: [
     BrowserModule,

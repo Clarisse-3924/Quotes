@@ -12,9 +12,10 @@ export class FormComponent implements OnInit {
   quotePublisher:string
   quoteAuthor:string
   theQuote:any
+  quoteMyDate: Date;
 
   submitQuote(  ){
-    this.theQuote= new Quote(this.quotePublisher,this.quoteAuthor,this.quoteStr)
+    this.theQuote= new Quote(this.quotePublisher,this.quoteAuthor,this.quoteStr,this.quoteMyDate)
     this.quoteStr=''
     this.quoteAuthor=''
     this.quotePublisher=''
