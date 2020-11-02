@@ -8,18 +8,18 @@ import { Quote} from '../quote';
 })
 export class FormComponent implements OnInit {
   @Output() emitQuote= new EventEmitter()
-  quoteStr:string
-  quotePublisher:string
-  quoteAuthor:string
-  theQuote:any
+  quote:string
+  publisher:string
+  Author:string
+  myQuote:any
   quoteMyDate: Date;
 
   submitQuote(  ){
-    this.theQuote= new Quote(this.quotePublisher,this.quoteAuthor,this.quoteStr,this.quoteMyDate)
-    this.quoteStr=''
-    this.quoteAuthor=''
-    this.quotePublisher=''
-    this.emitQuote.emit(this.theQuote)
+    this.myQuote= new Quote(this.publisher,this.Author,this.quote,this.quoteMyDate)
+    this.quote=''
+    this.Author=''
+    this.publisher=''
+    this.emitQuote.emit(this.myQuote)
   }
 
 
