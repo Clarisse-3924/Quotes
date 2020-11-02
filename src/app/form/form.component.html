@@ -1,24 +1,26 @@
 <div class="container-fluid">
-  <h1>Vote for Inspiring quotes</h1>
+  
     <form (ngSubmit)="submitQuote()">
+      <h1>Post Your  quotes</h1>
+      <hr>
   
       <br>
   
        <div class="form-group">
        <strong>Name:</strong>
-       <input type="text"  name="publisher" class="form-control" [(ngModel)]="publisher" placeholder="Enter your name">
+       <input type="text"  name="publisher" class="form-control" [(ngModel)]="publisher" placeholder="Enter your name" required>
       </div>
   
       <div class="form-group">
           <strong>Quotes:</strong>
-          <input type="text" name="quote" class="form-control"  [(ngModel)]="quote" placeholder="Enter your Quote">
+          <input type="text" name="quote" class="form-control"  [(ngModel)]="quote" placeholder="Enter your Quote"  required>
       </div>
   
       <div class="form-group">
           <strong>Author:</strong>
-          <input type="text" name="author" class="form-control"   [(ngModel)]="Author" placeholder="Enter Author">
+          <input type="text" name="author" class="form-control"   [(ngModel)]="Author" placeholder="Enter Author" required>
       </div>
   
-      <button type="submit" class="btn btn-success">Post Quote</button>
+      <button type="submit" class="btn btn-success">Post</button>
     </form>
   </div>

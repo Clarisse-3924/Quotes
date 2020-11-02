@@ -1,21 +1,21 @@
-<app-form (emitQuote)="addQuote($event)"></app-form>
-
-  <div class="container">
+ <div class="container">
+    <app-form (emitQuote)="addQuote($event)"></app-form>
     <div class="row">
       <div class="col-md-10">
-      
+        <h4 id="style"> Vote,Publish your favorite Quotes!!</h4>
         <div  class="myQuote"*ngFor="let quote of quotes; let i=index" id="g">
           <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.quote}}</p>
-          <p  *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
-          <app-details [quote]="quote"></app-details>
-
+          <p  *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0"></p>
+          <div id="H">
+          <app-details [quote]="quote"></app-details></div>
+          <div class="h">
           <button class="btn btn-success" (click)="upvote(i)">Upvote</button>
           <button class="btn btn-primary" (click)="downvote(i)">Downvote</button>
-          <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
-
+          <button class="btn btn-danger" (click)="delQuote(i)">Delete</button></div>
           <hr>
-
-        </div>
+         </div>
       </div>
+      <h6 id="style">Thank you for using my Website<br> email:Clarisse@gmail.com</h6>
     </div>
+   
   </div>

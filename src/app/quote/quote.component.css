@@ -1,6 +1,21 @@
 #g{background-color: lightsalmon;
 border-radius: 20px;
-margin-top: 10px;
-margin-right: 200px;
-margin-left:0px;
-padding-left: 20px;}
+padding-left: 10px;
+margin-right: 0px;
+margin-left: 100px;
+margin-top:-10px;
+}
+.container{background-image: url("https://i.pinimg.com/564x/7b/cc/c9/7bccc929131cfa1bacebc2f62cc3976e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+display: flex;
+flex-direction: row;
+justify-content:space-between;}
+
+#style{
+    color:black;
+    background-color: lightgray;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px solid goldenrod;
+    padding: 20px;
+}
