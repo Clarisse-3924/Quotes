@@ -5,20 +5,20 @@
       <br>
   
        <div class="form-group">
-       <label for="name"><strong>Person's Name:</strong></label>
-       <input type="text"  name="publisher" class="form-control" id="exampleFormControlInput1" [(ngModel)]="quotePublisher" placeholder="Write Your Name Here:">
+       <strong>Name:</strong>
+       <input type="text"  class="form-control" id="input" [(ngModel)]="quotePublisher" placeholder="Enter publisher Name">
       </div>
   
       <div class="form-group">
-          <label for="quotes"><strong>Quotes:</strong></label>
-          <input type="text" name="quote" class="form-control" id="exampleFormControlInput1" [(ngModel)]="quoteStr" placeholder="Add Your Quote Here:">
+          <strong>Quotes:</strong>
+          <input type="text" class="form-control" id="input" [(ngModel)]="quoteStr" placeholder="Enter your quote">
       </div>
   
       <div class="form-group">
-          <label for="author"><strong>Author:</strong></label>
-          <input type="text" name="author" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="quoteAuthor" placeholder="Add Name of the Author Here:">
+         <strong>Author:</strong>
+          <input type="text"  class="form-control" id="input"  [(ngModel)]="quoteAuthor" placeholder="Enter your name">
       </div>
   
-      <button type="submit" class="btn btn-primary">Post Quote</button>
+      <button type="submit">Post Quote</button>
     </form>
   </div>
