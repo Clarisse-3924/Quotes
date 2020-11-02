@@ -1,5 +1,30 @@
 # Quotes
 
+## project or program name:
+
+Quotes
+## Author name 
+
+Clarisse Uwizeyimana
+
+## Description of project:
+
+This project allow user to post their quotes,vote and delete their post. not only that but also it allows them to view the date that quotes was posted on and the days passed. 
+## project setup instructions:
+
+You have to open yur terminal(Ctrl+Alt+T) You have to clone this project by using this link https://github.com/Clarisse-3924/Quotes.git
+
+## To live site on GitHub Pages
+
+[click here to see website](https://clarisse-3924.github.io/Quotes/)
+
+## Copyright and license information
+Information MIT license and Copyright@2020
+
+## Contact
+
+That is my contact in case you want to contact. Email: cuwizeyimana820@daviscollege.com
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
