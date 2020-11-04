@@ -6,11 +6,11 @@ import {Quote} from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes=[new Quote("New Times","Clarisse Uwizeyimana","God is Good",new Date(2020,11,1)),
+  quotes=[new Quote("New Times","Clarisse Uwizeyimana","God is Good",new Date(2020,2,1)),
 new Quote("Igihe","Gihozo","All The time",new Date(2020,11,1))]
-  preNum:number
-  lastNum:number
-  counter:number
+  firstnum:number
+  lastnum:number
+  count:number
 
   addQuote(emittedQuote){
     this.quotes.push(emittedQuote)
@@ -26,14 +26,14 @@ new Quote("Igihe","Gihozo","All The time",new Date(2020,11,1))]
     this.quotes.splice(i, 1)
   }
   highestUpvote(){
-    this.preNum = 0
-    this.lastNum = 0
+    this.firstnum = 0
+    this.lastnum = 0
 
-    for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
-      this.lastNum = this.quotes[this.counter].upvotes;
-      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+    for(this.count=0 ; this.count < this.quotes.length; this.count++) {
+      this.lastnum = this.quotes[this.count].upvotes;
+      if(this.lastnum > this.firstnum){this.firstnum = this.lastnum}
     }
-    return  this.preNum
+    return  this.firstnum
   }
   constructor() { }
 
